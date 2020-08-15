@@ -2,27 +2,37 @@
 
 const adulto = document.querySelector('#adultos')
 const crianca = document.querySelector('#criancas')
+const cervejas = document.querySelector('#cervejas')
 const botao = document.querySelector('div button')
 
 const lista = document.querySelector('.resultado')
-
-
-// Por adulto:
-// 300g de carne
-// 100g de coração
-// 0,5L de cerveja
-// 1L de refrigerante
-// Por criança:
-
-// 150g de carne
-// 50g de coracao
-// 0,5L de refrigerante
 
 
 botao.addEventListener("click", ()=> {
 
   let ad = adulto.valueAsNumber
   let cr = crianca.valueAsNumber
+
+  let cerveja = cervejas.value
+
+switch(cerveja) {
+    case 'garrafa':
+        cerveja = "Garrafa de 600ml"
+    break
+    case 'latao':
+        cerveja = "Latão 475ml"
+    break
+    case 'long-neck':
+        cerveja = "Long neck 330ml"
+    break
+    case 'lata':
+        cerveja = "Lata 350ml"
+    break
+    case 'latinha':
+        cerveja = "Latinha 269ml"
+    break
+}
+ 
   
   let churrascoAdulto = {  
       carne: 300,
@@ -55,7 +65,7 @@ botao.addEventListener("click", ()=> {
   montaLista += `<li>Adultos</li><ul>`
   montaLista += `<li> ${churrascoAdulto.carne}g de carne </li>`
   montaLista += `<li> ${churrascoAdulto.coracao}g de coração </li>`
-  montaLista += `<li> ${ad} cervejas de ${churrascoAdulto.cerveja}ml </li>`
+  montaLista += `<li> ${ad} cervejas de ${cerveja} </li>`
   montaLista += `<li> ${churrascoAdulto.refrigerante}L de refrigerante </li>`
   montaLista += `</ul>`
 
