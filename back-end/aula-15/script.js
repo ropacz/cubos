@@ -71,7 +71,6 @@ const addWallet = (newProduct) => {
         if(myWallet[i].id === newProduct.id){
             myWallet[i].amount +=  newProduct.amount
             flag = true
-            break
         } 
     }
   }
@@ -96,7 +95,6 @@ const upadeAmountProducts = (newProduct) => {
   for(let i = 0; i < products.length; i++){
     if(products[i].id === newProduct.id){
       products[i].amount -=  newProduct.amount
-      break
     } 
   }
 }
