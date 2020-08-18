@@ -44,8 +44,8 @@ const questao7 = (entrada) => {
 
 const questao8 = (entrada) => {
     //8478 9847 8748 9484
-    let utimoDigito = entrada.slice(entrada.length - 5, entrada.length)
-    let texto = utimoDigito.padStart(entrada.length, "**** ").trim()
+    let ultimoDigito = entrada.slice(entrada.length - 5, entrada.length)
+    let texto = ultimoDigito.padStart(entrada.length, "**** ").trim()
 
     console.log(texto)
 }
