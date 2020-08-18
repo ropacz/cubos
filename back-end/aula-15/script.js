@@ -130,6 +130,7 @@ const availabilityProduct = (productInfo) => {
 
     } else if (answer > limit) {
       console.log(`A quantidade de ${chalk.red(answer + " é maior que a disponível")}  no estoque`)
+      init()
     } else {
       console.log(`${chalk.red("Erro! Valor ou comando inválido!")}`)
       rl.close();
