@@ -31,6 +31,7 @@ form.addEventListener("submit", event => {
     toDo.append(task)
     
     input.value = ""
+    input.replace(2, 2)
 })
 
 function deleteTask(event) {

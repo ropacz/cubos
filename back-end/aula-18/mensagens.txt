@@ -1,0 +1,40 @@
+[INICIO DA MENSAGEM] 
+Remetente: Nicolas 
+Destinatário: Pablo 
+Mensagem: Pablo, eu preciso urgentemente de sua ajuda para me tornar um grande cozinheiro! 
+[FIM DA MENSAGEM] 
+[INICIO DA MENSAGEM] 
+Remetente: Pablo 
+Destinatário: Nicolas 
+Mensagem: Hoje eu to com soninho, mas amanhã a gente conversa. 
+[FIM DA MENSAGEM] 
+[INICIO DA MENSAGEM] 
+Remetente: Vitinho 
+Destinatário: Victor 
+Mensagem: Eu precisei pular um muro 
+[FIM DA MENSAGEM] 
+[INICIO DA MENSAGEM] 
+Remetente: Anonimo 
+Destinatário: Victor 
+Mensagem: Como assim??????? 
+[FIM DA MENSAGEM] 
+[INICIO DA MENSAGEM] 
+Remetente: Vitinho 
+Destinatário: Anonimo 
+Mensagem: Essa é toda informação que você terá 
+[FIM DA MENSAGEM] 
+[INICIO DA MENSAGEM] 
+Remetente: Nicolas 
+Destinatário: Fernanda 
+Mensagem: O chefe saiu da sala, hora da bagunça 
+[FIM DA MENSAGEM] 
+[INICIO DA MENSAGEM] 
+Remetente: Fernanda 
+Destinatário: Nicolas 
+Mensagem: Nicolas, se comporte! 
+[FIM DA MENSAGEM] 
+[INICIO DA MENSAGEM] 
+Remetente: Arthur 
+Destinatário: Junior 
+Mensagem: To com fome 
+[FIM DA MENSAGEM] 
