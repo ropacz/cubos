@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: 'Russo One', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
+  html, body {
+    background: aliceblue;
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      color: #ddd;
+      height: 100vh;
+     
+  }
+
+
+  .container div {
+    display: flex;
+    flex: 1 350px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #30336b;
+  }
+
+  .container div:nth-child(2) {
+    overflow: hidden;
+    justify-content: flex-end;
+    background-color: #dff9fb;
+  }
+
+  .count {
+      width: 150px;
+      height: 50px;
+      background-color: rgb(36, 36, 36);
+      color: #fff;
+      margin: 0 auto;
+      line-height: 50px;
+      font-size: 2em;
+  }
+
+  button {
+      height: 40px;
+      width: 250px;
+      margin: 2em auto;
+      cursor: pointer;
+      color: #fff;
+      border: none;
+  }
+
+  button.start {
+    background-color: #6ab04c;
+    color: #fff;
+
+  }
+
+  button.stop {
+      background-color: #eb4d4b;
+      color: #fff;
+
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .hide {
+    display: block;  
+  }
+
+  .rocket {
+    position: absolute;
+    bottom: 0px;
+    /* animation: fly 3s .5s ease-in; */
+    align-self: center;
+    width: 100%;
+    max-width: 400px; 
+    transition: none;
+  }
+  @keyframes fly {
+    0% {
+      bottom: 0px;   
+    }
+    100% {
+      bottom: 100%;
+      opacity: 0.8;
+    }
+
+  
+  /* .rocket {
+    position: absolute;
+    bottom: -600px;
+    left:35%;
+    animation: fly 3s .5s ease-in;
+  }
+  
+  @keyframes fly {
+    0% {
+      bottom: -600px;   
+    }
+    100% {
+      bottom: 100%;
+    }
+  } */
