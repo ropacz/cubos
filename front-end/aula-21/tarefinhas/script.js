@@ -28,19 +28,18 @@ const renderizarTarefas = (filtro = null) => {
     //     <span> ${texto} </span> <a href="#" onclick="deletar(${index})">Deletar</a></li>`
     // }).join('')
 
-    ativo = filtro
-
-    let array = listaDeTarefas
+    let listaCompleta = true
 
     if (filtro === true) {
-        array = listaDeTarefas.filter((item) => item.feito === true)
+        listaCompleta = false
     } else if (filtro === false) {
-        array = listaDeTarefas.filter((item) => item.feito === false)
+        listaCompleta = false
     }
 
     tarefas.innerHTML = ''
 
-    array.forEach(({ texto, feito }, index) => {
+    listaDeTarefas.forEach(({ texto, feito }, index) => {
+        if(feito === filtro || listaCompleta) {
 
         let li = document.createElement('li')
         
@@ -66,13 +65,12 @@ const renderizarTarefas = (filtro = null) => {
         lista.append(tarefaTexto)
         lista.append(deletar)
 
-    })
+    }})
 
     total()
 
 }
 
-renderizarTarefas()
 
 campoTarefa.addEventListener("keypress", (event) => {
     let tecla = event.keyCode
@@ -102,15 +100,15 @@ botaoTodasTarefas.addEventListener("click", () => {
 })
 
 botaoAFazer.addEventListener("click", () => {
-    renderizarTarefas(false)
     removerClasseAtivo()
     botaoAFazer.classList.add('ativo')
+    renderizarTarefas(false)
 })
 
 botaoFeitas.addEventListener("click", () => {
-    renderizarTarefas(true)
     removerClasseAtivo()
     botaoFeitas.classList.add('ativo')
+    renderizarTarefas(true)
 })
 
 botaoLimpar.addEventListener("click", () => {
@@ -126,19 +124,24 @@ const adicionarTarefa = (texto) => {
         }
     )
     campoTarefa.value = ''
-    console.log(ativo)
-    renderizarTarefas(ativo)
+    renderizarTarefas()
 }
 
 
 const deletar = (pos) => {
     listaDeTarefas.splice(pos, 1)
-    renderizarTarefas(ativo)
+    renderizarTarefas()
 }
 
 const marcarComoFeito = (pos) => {
     listaDeTarefas[pos].feito = !listaDeTarefas[pos].feito
-    renderizarTarefas(ativo)
+    if(botaoAFazer.classList.contains('ativo')) {
+        renderizarTarefas(false)
+    } else if(botaoFeitas.classList.contains('ativo')) {
+        renderizarTarefas(true)
+    } else {
+        renderizarTarefas()
+    }
 }
 
 const marcarTodasTarefas = (todas) => {
@@ -157,3 +160,4 @@ const limparTarefas = () => {
     renderizarTarefas()
 }
 
+renderizarTarefas()
