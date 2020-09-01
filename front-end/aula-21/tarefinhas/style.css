@@ -1,0 +1,69 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.box .novaTarefa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.novaTarefa input[type=text] {
+    width: 100%;
+    height: 25px;
+    padding: 0.5em
+}
+
+.novaTarefa input[type=checkbox], .tarefas input[type=checkbox] {
+    width: 20px;
+    height: 25px;
+    margin-right: 1em;
+}
+
+.tarefas .feito {
+    text-decoration: line-through;
+}
+
+.tarefas ul {
+    list-style: none;
+    margin-top: 2em;
+}
+
+.tarefas ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+}
