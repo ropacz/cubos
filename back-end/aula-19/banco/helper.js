@@ -26,11 +26,7 @@ const getBank = (cod) => {
 }
 
 const formartNumber = (number) => {
-    let numberInString = String(number)
-
-    if (numberInString === null) return ""
-
-    return numberInString.replace(/[^0-9]+/g, "")
+    return number.replace(/[^0-9]+/g, "")
 }
 
 const verifyCPF = (cpf) => {
@@ -40,19 +36,19 @@ const verifyCPF = (cpf) => {
 
 const formartCPF = (cpf) => {
 
-    let cpfInString = formartNumber(cpf)
+    let cpfInNumber = formartNumber(cpf)
 
-    if(!verifyCPF(cpfInString)) return "" 
+    if(!verifyCPF(cpfInNumber)) return "" 
 
-    let twoDigits = cpfInString.substr(-2)
+    let twoDigits = cpfInNumber.substr(-2)
     let cpfFormatNumber = ''
     let cuts = 0
 
     while (cuts < 3) {
         if (cuts === 0) {
-            cpfFormatNumber += cpfInString.substr(3 * cuts, 3)
+            cpfFormatNumber += cpfInNumber.substr(3 * cuts, 3)
         } else {
-            cpfFormatNumber += "." + cpfInString.substr(3 * cuts, 3)
+            cpfFormatNumber += "." + cpfInNumber.substr(3 * cuts, 3)
         }
         cuts++
     }
@@ -80,6 +76,7 @@ const formartNumberAccount = (number) => {
 
     return numberAccount
 }
+
 
 
 // console.log(formartCPF('10203040400'))

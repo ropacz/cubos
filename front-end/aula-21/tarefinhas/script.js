@@ -11,6 +11,7 @@ const botaoAFazer = document.querySelector('.filtros .aFazer')
 const botaoFeitas = document.querySelector('.filtros .feitas')
 const botaoLimpar = document.querySelector('.limpar button')
 
+let listaCompleta = true
 let ativo = null
 
 let listaDeTarefas = []
@@ -28,7 +29,7 @@ const renderizarTarefas = (filtro = null) => {
     //     <span> ${texto} </span> <a href="#" onclick="deletar(${index})">Deletar</a></li>`
     // }).join('')
 
-    let listaCompleta = true
+    ativo = filtro
 
     if (filtro === true) {
         listaCompleta = false
@@ -94,7 +95,7 @@ const removerClasseAtivo = () => {
 
 
 botaoTodasTarefas.addEventListener("click", () => {
-    renderizarTarefas()
+    renderizarTarefas(null)
     removerClasseAtivo()
     botaoTodasTarefas.classList.add('ativo')
 })
@@ -130,7 +131,7 @@ const adicionarTarefa = (texto) => {
 
 const deletar = (pos) => {
     listaDeTarefas.splice(pos, 1)
-    renderizarTarefas()
+    renderizarTarefas(ativo)
 }
 
 const marcarComoFeito = (pos) => {
@@ -140,7 +141,7 @@ const marcarComoFeito = (pos) => {
     } else if(botaoFeitas.classList.contains('ativo')) {
         renderizarTarefas(true)
     } else {
-        renderizarTarefas()
+        renderizarTarefas(ativo)
     }
 }
 
@@ -152,7 +153,7 @@ const marcarTodasTarefas = (todas) => {
             tarefa.feito = false
         }
     }
-    renderizarTarefas()
+    renderizarTarefas(ativo)
 }
 
 const limparTarefas = () => {

@@ -1,4 +1,4 @@
-const helpers = require('./helpers')
+const helper = require('./helper')
 
 let accountHolders = [{
     name: "Rodrigo Paczkovski",
@@ -32,9 +32,9 @@ let accountHolders = [{
 
 const getAccountHolder = (cpf) => {
 
-    if (!helpers.verifyCPF(cpf)) return "Formato de CPF inválido"
+    if (!helper.verifyCPF(cpf)) return "Formato de CPF inválido"
 
-    let formartNumberInCPF = helpers.formartNumber(cpf)
+    let formartNumberInCPF = helper.formartNumber(cpf)
 
     for (let i = 0; i < accountHolders.length; i++) {
         if (accountHolders[i].cpf == formartNumberInCPF) {
@@ -58,9 +58,9 @@ const getAccountHolder = (cpf) => {
 
 const createAccount = (accountHolder) => {
 
-    if (typeof accountHolder === undefined || accountHolder === null) return "Corretista vázio"
+    if (accountHolder === undefined || accountHolder === null) return "Corretista vázio"
 
-    if (!helpers.verifyCPF(accountHolder.cpf)) return "Formato de CPF inválido"
+    if (!helper.verifyCPF(accountHolder.cpf)) return "Formato de CPF inválido"
 
     let accountHolderVerifyExist = getAccountHolder(accountHolder.cpf)
     accountHolderVerifyExist = (typeof accountHolderVerifyExist === "object") ? accountHolderVerifyExist : null
@@ -92,7 +92,7 @@ const updateAccount = (cpf, property, value) => {
 
     if (cpfInString === null || propertyInString === null || value === null) return "Dados vázios"
 
-    if (!helpers.verifyCPF(cpfInString)) return "Formato de CPF inválido"
+    if (!helper.verifyCPF(cpfInString)) return "Formato de CPF inválido"
 
     if (propertyInString === "balance") return "Não é permitido atualizar a propriedade::balance"
 
@@ -122,7 +122,7 @@ const deleteAccount = (cpf) => {
 
     if (cpfInString === null) return "Dados vázios"
 
-    if (!helpers.verifyCPF(cpfInString)) return "Formato de CPF inválido"
+    if (!helper.verifyCPF(cpfInString)) return "Formato de CPF inválido"
 
     let flag = true
 
@@ -142,8 +142,8 @@ const deleteAccount = (cpf) => {
 
 
 const transferMoneyBetweenBanks = (cpf_send, cpf_receiver, value) => {
-    let cpfSendInString = String(cpf)
-    let cpfReceiverInString = String(cpf)
+    let cpfSendInString = String(cpf_send)
+    let cpfReceiverInString = String(cpf_receiver)
     let valueInNumber = Number(balance)
 
     for(let accountSend of accountHolders) {
@@ -154,6 +154,8 @@ const transferMoneyBetweenBanks = (cpf_send, cpf_receiver, value) => {
 
             for(let accountReceiver of accountHolders){
                     
+              
+
             }
            
         }
@@ -166,7 +168,7 @@ const updateBalance = (cpf, balance) => {
     let balanceInNumber = Number(balance)
 
     if (cpfInString === null || balanceInNumber === null ) return "Dados vázios"
-    if (!helpers.verifyCPF(cpfInString)) return "Formato de CPF inválido"
+    if (!helper.verifyCPF(cpfInString)) return "Formato de CPF inválido"
 
     let flag = true
 
