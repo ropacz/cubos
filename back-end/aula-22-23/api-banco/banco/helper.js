@@ -24,7 +24,8 @@ const obterNomeDoBanco = (codigo) => {
 }
 
 const limpaTexto = (numeros) => {
-    return numeros.replace(/[^0-9]+/g, "")
+    let n = String(numeros)
+    return n.replace(/[^0-9]+/g, "")
 }
 
 const formatarCPF = (numeros) => {
