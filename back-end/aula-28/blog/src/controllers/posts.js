@@ -2,12 +2,23 @@ const { formatarErro, formatarSucesso } = require('./formatar');
 const autores = require('../repositories/autores');
 const posts = require('../repositories/posts');
 
+const { obterPostsDeAutor } = require('./autores');
+
 /**
  * Função retorna todos os posts.
  */
 const obterPosts = (ctx) => {
-	const resposta = posts.filter((item) => !item.deletado && !item.publicado);
-	formatarSucesso(ctx, resposta, 200);
+	const { autor } = ctx.query;
+
+	if (autor) {
+		const postDoAutor = obterPostsDeAutor(autor);
+		if (postDoAutor.length > 0) {
+			formatarSucesso(ctx, postDoAutor, 200);
+		}
+	} else {
+		const dados = posts.filter((post) => !post.deletado);
+		formatarSucesso(ctx, dados, 200);
+	}
 };
 /**
  * Função retorna apenas um post.
@@ -17,10 +28,8 @@ const obterPost = (ctx) => {
 	let { id } = ctx.params;
 	id = parseInt(id, 10);
 
-	const resposta = posts.filter(
-		(item) => item.id === id && !item.deletado && !item.publicado
-	);
-	formatarSucesso(ctx, resposta, 200);
+	const dados = posts.filter((post) => post.id === id && !post.deletado);
+	formatarSucesso(ctx, dados, 200);
 };
 
 /**
