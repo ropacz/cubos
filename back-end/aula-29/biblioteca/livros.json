@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Sucos Detox",
+        "autor": "Dr. Roberto",
+        "id": 1,
+        "deletado": false
+    },
+    {
+        "titulo": "Sucos Detox",
+        "autor": "Dr. Roberto",
+        "id": 2,
+        "deletado": false
+    },
+    {
+        "titulo": "Sucos Detox",
+        "autor": "Dr. Roberto",
+        "id": 3,
+        "deletado": false
+    }
+]

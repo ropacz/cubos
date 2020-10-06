@@ -1,0 +1,222 @@
+[
+    {
+        "time": "Flamengo",
+        "pontos": 90,
+        "partidas": 38,
+        "empates": 6,
+        "vitorias": 28,
+        "derrotas": 4,
+        "golsFeitos": 86,
+        "golsSofridos": 37,
+        "saldoDeGols": 49
+    },
+    {
+        "time": "Grêmio",
+        "pontos": 65,
+        "partidas": 38,
+        "empates": 8,
+        "vitorias": 19,
+        "derrotas": 11,
+        "golsFeitos": 64,
+        "golsSofridos": 39,
+        "saldoDeGols": 25
+    },
+    {
+        "time": "Santos",
+        "pontos": 74,
+        "partidas": 38,
+        "empates": 8,
+        "vitorias": 22,
+        "derrotas": 8,
+        "golsFeitos": 60,
+        "golsSofridos": 33,
+        "saldoDeGols": 27
+    },
+    {
+        "time": "Fortaleza",
+        "pontos": 53,
+        "partidas": 38,
+        "empates": 8,
+        "vitorias": 15,
+        "derrotas": 15,
+        "golsFeitos": 50,
+        "golsSofridos": 47,
+        "saldoDeGols": 3
+    },
+    {
+        "time": "Palmeiras",
+        "pontos": 74,
+        "partidas": 38,
+        "empates": 11,
+        "vitorias": 21,
+        "derrotas": 6,
+        "golsFeitos": 61,
+        "golsSofridos": 32,
+        "saldoDeGols": 29
+    },
+    {
+        "time": "Athletico-PR",
+        "pontos": 64,
+        "partidas": 38,
+        "empates": 10,
+        "vitorias": 18,
+        "derrotas": 10,
+        "golsFeitos": 49,
+        "golsSofridos": 32,
+        "saldoDeGols": 17
+    },
+    {
+        "time": "Inter-RS",
+        "pontos": 57,
+        "partidas": 38,
+        "empates": 9,
+        "vitorias": 16,
+        "derrotas": 13,
+        "golsFeitos": 44,
+        "golsSofridos": 39,
+        "saldoDeGols": 5
+    },
+    {
+        "time": "Bahia",
+        "pontos": 49,
+        "partidas": 38,
+        "empates": 13,
+        "vitorias": 12,
+        "derrotas": 13,
+        "golsFeitos": 44,
+        "golsSofridos": 43,
+        "saldoDeGols": 1
+    },
+    {
+        "time": "São Paulo",
+        "pontos": 63,
+        "partidas": 38,
+        "empates": 12,
+        "vitorias": 17,
+        "derrotas": 9,
+        "golsFeitos": 39,
+        "golsSofridos": 30,
+        "saldoDeGols": 9
+    },
+    {
+        "time": "Corinthians",
+        "pontos": 56,
+        "partidas": 38,
+        "empates": 14,
+        "vitorias": 14,
+        "derrotas": 10,
+        "golsFeitos": 42,
+        "golsSofridos": 34,
+        "saldoDeGols": 8
+    },
+    {
+        "time": "Cruzeiro",
+        "pontos": 36,
+        "partidas": 38,
+        "empates": 15,
+        "vitorias": 7,
+        "derrotas": 16,
+        "golsFeitos": 27,
+        "golsSofridos": 46,
+        "saldoDeGols": -19
+    },
+    {
+        "time": "Vasco",
+        "pontos": 49,
+        "partidas": 38,
+        "empates": 13,
+        "vitorias": 12,
+        "derrotas": 13,
+        "golsFeitos": 39,
+        "golsSofridos": 45,
+        "saldoDeGols": -6
+    },
+    {
+        "time": "Atlético-MG",
+        "pontos": 48,
+        "partidas": 38,
+        "empates": 9,
+        "vitorias": 13,
+        "derrotas": 16,
+        "golsFeitos": 45,
+        "golsSofridos": 49,
+        "saldoDeGols": -4
+    },
+    {
+        "time": "Ceará",
+        "pontos": 39,
+        "partidas": 38,
+        "empates": 9,
+        "vitorias": 10,
+        "derrotas": 19,
+        "golsFeitos": 36,
+        "golsSofridos": 41,
+        "saldoDeGols": -5
+    },
+    {
+        "time": "Botafogo",
+        "pontos": 43,
+        "partidas": 38,
+        "empates": 4,
+        "vitorias": 13,
+        "derrotas": 21,
+        "golsFeitos": 31,
+        "golsSofridos": 45,
+        "saldoDeGols": -14
+    },
+    {
+        "time": "CSA",
+        "pontos": 32,
+        "partidas": 38,
+        "empates": 8,
+        "vitorias": 8,
+        "derrotas": 22,
+        "golsFeitos": 24,
+        "golsSofridos": 58,
+        "saldoDeGols": -34
+    },
+    {
+        "time": "Avaí",
+        "pontos": 20,
+        "partidas": 38,
+        "empates": 11,
+        "vitorias": 3,
+        "derrotas": 24,
+        "golsFeitos": 18,
+        "golsSofridos": 62,
+        "saldoDeGols": -44
+    },
+    {
+        "time": "Chapecoense",
+        "pontos": 32,
+        "partidas": 38,
+        "empates": 11,
+        "vitorias": 7,
+        "derrotas": 20,
+        "golsFeitos": 31,
+        "golsSofridos": 52,
+        "saldoDeGols": -21
+    },
+    {
+        "time": "Goiás",
+        "pontos": 52,
+        "partidas": 38,
+        "empates": 7,
+        "vitorias": 15,
+        "derrotas": 16,
+        "golsFeitos": 46,
+        "golsSofridos": 64,
+        "saldoDeGols": -18
+    },
+    {
+        "time": "Fluminense",
+        "pontos": 46,
+        "partidas": 38,
+        "empates": 10,
+        "vitorias": 12,
+        "derrotas": 16,
+        "golsFeitos": 38,
+        "golsSofridos": 46,
+        "saldoDeGols": -8
+    }
+]
